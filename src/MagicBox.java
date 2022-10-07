@@ -14,9 +14,11 @@ public class MagicBox<T> {
         for (int i = 0; i < size; i++) {
             if (items[i] == null) {
                 items[i] = item;
+                System.out.println(item + " добавлен в коробку.");
                 return true;
             }
         }
+        System.out.println(item + " НЕ добавлен в коробку, потому что коробка уже заполнена.");
         return false;
     }
 
