@@ -23,7 +23,7 @@ public class MagicBox<T> {
     }
 
     public T pick() throws RuntimeException {
-        int empty = 0;
+        int empty = 0; // number of empty items
         for (T item : items) {
             if (item == null) {
                 empty++;
